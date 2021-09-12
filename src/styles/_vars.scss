@@ -1,0 +1,15 @@
+$breakpoint-l: 1320px;
+$breakpoint-m-max: $breakpoint-l - 1;
+$breakpoint-m: 1024px;
+$breakpoint-s-max: $breakpoint-m - 1;
+$breakpoint-s: 720px;
+$breakpoint-xs-max: $breakpoint-s - 1;
+$breakpoint-xs: 320px;
+
+$gap: 0.5rem;
+
+$weight-regular-400: 400;
+$weight-semibold-600: 600;
+$weight-bold-700: 700;
+
+$dropdownZIndex: 100;

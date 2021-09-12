@@ -1,0 +1,98 @@
+@import 'styles/vars';
+@import 'styles/colors';
+
+.root {
+	width: 100%;
+	margin-bottom: 1.5 * $gap;
+
+	@media screen and (min-width: $breakpoint-s) {
+		margin-bottom: 3 * $gap;
+	}
+
+	input {
+		width: 100%;
+		padding: 1.5 * $gap 2.5 * $gap;
+		border: 1px solid $grey400;
+		background-color: $grey100;
+		border-radius: $gap / 2;
+
+		@media screen and (min-width: $breakpoint-s) {
+			font-size: 1.5em;
+		}
+
+		@media screen and (min-width: $breakpoint-m) {
+			font-size: 1.2em;
+		}
+
+		&[type='password'] {
+			letter-spacing: 0.2em;
+		}
+
+		&.error {
+			border: 1px solid $warn;
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: $grey400;
+	}
+	::-moz-placeholder {
+		color: $grey400;
+	}
+	:-ms-input-placeholder {
+		color: $grey400;
+	}
+	:-moz-placeholder {
+		color: $grey400;
+	}
+}
+
+.titleContainer {
+	display: flex;
+	margin-bottom: $gap;
+	line-height: 1.5em;
+
+	@media screen and (min-width: $breakpoint-s) {
+		font-size: 1.375em;
+		line-height: 1.9em;
+	}
+
+	@media screen and (min-width: $breakpoint-m) {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+
+	.title {
+		font-size: inherit;
+		line-height: inherit;
+	}
+
+	.required {
+		font-size: inherit;
+		line-height: inherit;
+		margin-left: 0.25em;
+		color: $warn;
+	}
+}
+
+.additional {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.5em;
+	align-items: center;
+	min-height: 1.5em;
+
+	> div {
+		display: flex;
+		align-items: center;
+	}
+
+	svg {
+		cursor: pointer;
+	}
+}
+
+.errorNote {
+	color: $warn;
+	text-align: right;
+}

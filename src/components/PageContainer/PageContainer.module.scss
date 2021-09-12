@@ -1,0 +1,84 @@
+@import 'styles/colors';
+@import 'styles/vars';
+
+.root {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: white;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	justify-content: space-between;
+	display: flex;
+	align-items: flex-end;
+	max-height: 6.25rem;
+	padding-right: 1em;
+
+	@media screen and (min-width: $breakpoint-s) {
+		padding: 1em 1em 0 1em;
+	}
+}
+
+.content {
+	overflow: auto;
+	flex-grow: 1;
+	margin: 0 auto;
+	width: 76%;
+	min-width: 76%;
+	height: 100%;
+
+	@media screen and (orientation: landscape) and (max-width: $breakpoint-xs-max) {
+		width: 56%;
+		min-width: 56%;
+		max-width: 56%;
+	}
+
+	@media screen and (min-width: $breakpoint-s) {
+		max-width: 500px;
+		width: 500px;
+		min-width: 500px;
+	}
+
+	@media screen and (min-width: $breakpoint-m) {
+		max-width: 650px;
+		width: 650px;
+		min-width: 650px;
+	}
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: center;
+	max-height: 6.25rem;
+	align-items: center;
+	padding-top: 2em;
+
+	svg {
+		width: 9rem;
+		height: 2rem;
+	}
+
+	@media screen and (max-width: $breakpoint-xs-max) and (orientation: landscape) {
+		display: none;
+	}
+
+	@media screen and (orientation: landscape) {
+		padding-top: 1em;
+	}
+
+	@media screen and (min-width: $breakpoint-m) {
+		svg {
+			width: 12rem;
+			height: 3rem;
+		}
+	}
+}
+
+.loaderMargin {
+	margin-top: 7.5rem;
+}

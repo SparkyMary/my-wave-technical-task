@@ -1,0 +1,17 @@
+@import 'styles/colors';
+@import 'styles/vars';
+
+.toast {
+	border-left: 4px solid $primary;
+
+	.content {
+		width: 100%;
+		font-size: 1.3em;
+		line-height: 1.7;
+		font-weight: $weight-semibold-600;
+	}
+
+	&.warning {
+		border-left: 4px solid $warn;
+	}
+}
